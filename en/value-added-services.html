@@ -343,35 +343,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div>-->
 						
 						<div class="col-xl-6 col-md-12">
-							<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
-								<div class="carousel-indicators">
-									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-									<button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- 1. ส่วนจุดบอกตำแหน่ง (Indicators) - เพิ่มลำดับที่ 3 (สไลด์ที่ 4) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
 
-								</div>
-								<div class="carousel-inner banner rounded-4 border border-white border-4">
-									<div class="carousel-item active" data-bs-interval="4000" onclick="window.location.href='tokenization.html'">
-										<img src="../asset/img/service/card_tokenization.webp" border="0">
-									</div>
-									<div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='value-added-services.html?openModal=InstalmentPayment'" >
-										<img src="../asset/img/service/instalment.webp" border="0">
-									</div>
-									<div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='handsin.html'" >
-										<img src="../asset/img/service/handsin.webp" border="0">
-									</div>
+        <!-- 2. ส่วนเนื้อหาภาพสไลด์ (Carousel Inner) -->
+        <div class="carousel-inner banner rounded-4 border border-white border-4">
+            <div class="carousel-item active" data-bs-interval="4000" onclick="window.location.href='tokenization.html'">
+                <img src="../asset/img/service/card_tokenization.webp" border="0">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='value-added-services.html?openModal=InstalmentPayment'">
+                <img src="../asset/img/service/instalment.webp" border="0">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='handsin.html'">
+                <img src="../asset/img/service/handsin.webp" border="0">
+            </div>
+            <!-- เพิ่มหน้าที่ 4 ตรงนี้ -->
+            <div class="carousel-item" data-bs-interval="4000" onclick="window.location.href='addpass.html'">
+                <img src="../asset/img/service/addpass.png" border="0">
+            </div>
+        </div>
 
-								</div>
-								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-									  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									  <span class="visually-hidden">Previous</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-									  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-									  <span class="visually-hidden">Next</span>
-								</button>
-							</div>
-						</div>
+        <!-- 3. ปุ่มกด ย้อนกลับ-ถัดไป -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
 						
 					</div>
 				</div>
@@ -449,7 +457,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<div class="card-body p-1-9 pt-0 mt-d25">
 												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
 												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Split Payment</h4>
-												<p>Split payments across cards and for groups</p>
+												<p>Advanced Authentication Solution for Card Payment</p>
+											</div>
+										</article>
+									</div>
+									
+									<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='visa_passkey.html'">
+										<article class="card card-style-04 h-100">
+											<div class="blog-img position-relative overflow-hidden">
+												<img src="../asset/img/service/visa_passkey.png" alt="">
+											</div>
+											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
+												<img src="../asset/img/icon/authentication.svg">
+											</div>
+											<div class="card-body p-1-9 pt-0 mt-d25">
+												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
+												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">Visa Passkey</h4>
+												<p>An Advanced Authentication Solution for Card Payment</p>
+											</div>
+										</article>
+									</div>
+
+<div class="col-md-6 col-lg-4 mt-3 mb-3 cursor-pointer vas" onclick="window.location.href='addpass.html'">
+										<article class="card card-style-04 h-100">
+											<div class="blog-img position-relative overflow-hidden">
+												<img src="../asset/img/service/addpass.png" alt="">
+											</div>
+											<div class="card-pic-icon text-center py-2 align-self-center rounded-circle bg-white">
+												<img src="../asset/img/icon/ticketing.svg">
+											</div>
+											<div class="card-body p-1-9 pt-0 mt-d25">
+												<div class="text-primary d-block mt-0 pt-0">Card-Specific Services</div>
+												<h4 class="display-28 display-sm-26 display-lg-26 display-xl-26 fc-ap-blue ff-poppins-bold">AsiaPay AddPass</h4>
+												<p>One-tap digital pass management for a frictionless customer journey</p>
 											</div>
 										</article>
 									</div>
